@@ -29,7 +29,11 @@ namespace TechReturners.Tasks
     {
         public static int[] RowWeights(int[] a)
         {
-            throw new NotImplementedException();
+            int[] teamweight = new int[] { 0, 0 };
+
+            return teamweight;
+
+
         }
     }
 }
