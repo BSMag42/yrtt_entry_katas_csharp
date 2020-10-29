@@ -28,9 +28,7 @@ namespace TechReturners.Tasks
     public class Exercise003
     {
         public static int[] RowWeights(int[] a)
-        {
-            int[] teamweight = new int[] { 0, 0 };
-
+        {    
             var teamA = 0;
             var teamB = 0;
 
@@ -46,11 +44,7 @@ namespace TechReturners.Tasks
                 }
             }
 
-            teamweight[0] = teamA;
-            teamweight[1] = teamB;
-
-            return teamweight;
-
+            return new int[] { teamA, teamB }; 
         }
     }
 }
