@@ -31,8 +31,25 @@ namespace TechReturners.Tasks
         {
             int[] teamweight = new int[] { 0, 0 };
 
-            return teamweight;
+            var teamA = 0;
+            var teamB = 0;
 
+            for(int i=0; i<a.Length; i++)
+            {
+                if (i%2 == 0)//even
+                {
+                    teamA += a[i];
+                }
+                else//odd
+                {
+                    teamB += a[i];
+                }
+            }
+
+            teamweight[0] = teamA;
+            teamweight[1] = teamB;
+
+            return teamweight;
 
         }
     }
