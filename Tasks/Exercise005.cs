@@ -33,17 +33,13 @@ namespace TechReturners.Tasks
             {
                 string s = str.Substring(i, 1);
 
-                if ( !String.IsNullOrEmpty(s) )
+                if ( !String.IsNullOrWhiteSpace(s) )
                 {
                     s = s.ToUpper();
                     char[] chWave = str.ToCharArray();
                     chWave[i] = Convert.ToChar(s);
 
                     waveList.Add(new string(chWave));
-                }
-                else
-                {
-                    break;
                 }
 
             }
