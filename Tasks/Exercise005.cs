@@ -27,7 +27,8 @@ namespace TechReturners.Tasks
     {
         public static List<string> Wave(string str)
         {
-            throw new NotImplementedException();
+            List<string> mexicanWave = new List<string>();
+            return mexicanWave;
         }
     }
 }
