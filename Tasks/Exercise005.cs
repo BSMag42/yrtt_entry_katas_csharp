@@ -27,8 +27,19 @@ namespace TechReturners.Tasks
     {
         public static List<string> Wave(string str)
         {
-            List<string> mexicanWave = new List<string>();
-            return mexicanWave;
+            List<string> waveList = new List<string>();
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                var s = str.Substring(i, 1);
+                s = s.ToUpper();
+                char[] chWave = str.ToCharArray();
+                chWave[i] = Convert.ToChar(s);
+                
+                waveList.Add(new string(chWave));
+
+            }
+            return waveList;
         }
     }
 }
