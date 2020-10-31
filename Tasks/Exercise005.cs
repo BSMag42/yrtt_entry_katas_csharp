@@ -41,7 +41,6 @@ namespace TechReturners.Tasks
 
                     waveList.Add(new string(chWave));
                 }
-
             }
             return waveList;
         }
