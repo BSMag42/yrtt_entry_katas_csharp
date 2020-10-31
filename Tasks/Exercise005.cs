@@ -31,12 +31,20 @@ namespace TechReturners.Tasks
 
             for (int i = 0; i < str.Length; i++)
             {
-                var s = str.Substring(i, 1);
-                s = s.ToUpper();
-                char[] chWave = str.ToCharArray();
-                chWave[i] = Convert.ToChar(s);
-                
-                waveList.Add(new string(chWave));
+                string s = str.Substring(i, 1);
+
+                if ( !String.IsNullOrEmpty(s) )
+                {
+                    s = s.ToUpper();
+                    char[] chWave = str.ToCharArray();
+                    chWave[i] = Convert.ToChar(s);
+
+                    waveList.Add(new string(chWave));
+                }
+                else
+                {
+                    break;
+                }
 
             }
             return waveList;
